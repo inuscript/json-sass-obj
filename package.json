@@ -1,12 +1,12 @@
 {
   "name": "json-sass-obj",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Object mode wrapper for json-sass",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "engineStrict" : true,
+  "engineStrict": true,
   "engines": {
     "node": ">= 0.12"
   },
