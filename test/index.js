@@ -1,4 +1,4 @@
-var assert = require("power-assert") 
+var assert = require("assert") 
 var File = require('vinyl');
 var jsonSassObj = require("../")
 var fs = require("fs")

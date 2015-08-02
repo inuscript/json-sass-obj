@@ -4,7 +4,7 @@
   "description": "Object mode wrapper for json-sass",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require intelli-espower-loader"
+    "test": "mocha"
   },
   "files": [
     "index.js"
@@ -24,10 +24,7 @@
     "through2": "^2.0.0"
   },
   "devDependencies": {
-    "espower-loader": "^0.11.0",
-    "intelli-espower-loader": "^0.7.0",
     "mocha": "^2.2.5",
-    "power-assert": "^0.11.0",
     "vinyl": "^0.5.0"
   }
 }
