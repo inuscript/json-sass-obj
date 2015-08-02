@@ -4,7 +4,7 @@ Object mode wrapper for [jsonSass](https://github.com/acdlite/json-sass)
 
 ## Usage Example
 
-```file.js
+```js
 var File = require("vinyl")
 var jsonSassObj = require("json-sass-obj")
 
@@ -22,6 +22,7 @@ stream.write(fakeFile)
 stream.once('data', function(file){
   var scss = file.contents.toString()
   // scss output
+  //
   // $someItem: (
   //  foo: baz,
   //  bee: (1, 2, 3)
