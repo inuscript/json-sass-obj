@@ -1,14 +1,15 @@
 {
   "name": "json-sass-obj",
   "version": "1.0.0",
-  "description": "",
+  "description": "Object mode wrapper for json-sass",
   "main": "index.js",
   "scripts": {
     "test": "mocha --require intelli-espower-loader"
   },
-  "keywords": [],
+  "keywords": ["sass", "scss", "json", "stream"],
   "author": "inuscript",
   "license": "ISC",
+  "repository": "https://github.com/inuscript/json-sass-obj",
   "dependencies": {
     "json-sass": "^1.3.5",
     "replace-ext": "0.0.1",
