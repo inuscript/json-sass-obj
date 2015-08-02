@@ -5,6 +5,7 @@ var replaceExt = require('replace-ext');
 module.exports = function(options){
   return through2.obj(function(file, enc, cb){
     var jsValue = JSON.parse(file.contents.toString())
+    console.log(jsValue)
     var sassString = jsToSassString(jsValue)
     // sassString = options.prefix + sassString + options.suffix;
     file.contents = new Buffer(sassString)

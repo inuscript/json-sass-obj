@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'repo', 'json-sass' ]
+2 info using npm@3.2.1
+3 info using node@v0.12.2
+4 verbose node symlink /usr/local/bin/node
+5 silly fetchPackageMetaData json-sass
+6 silly fetchNamedPackageData json-sass
+7 silly mapToRegistry name json-sass
+8 silly mapToRegistry using default registry
+9 silly mapToRegistry registry https://registry.npmjs.org/
+10 silly mapToRegistry uri https://registry.npmjs.org/json-sass
+11 verbose request uri https://registry.npmjs.org/json-sass
+12 verbose request no auth needed
+13 info attempt registry request try #1 at 19:03:10
+14 verbose request id 3f7c86b231ba2c90
+15 verbose etag "2ICUIXI82UCVRZY62JM3OC1EE"
+16 http request GET https://registry.npmjs.org/json-sass
+17 http 304 https://registry.npmjs.org/json-sass
+18 silly get cb [ 304,
+18 silly get   { date: 'Sun, 02 Aug 2015 10:03:10 GMT',
+18 silly get     via: '1.1 varnish',
+18 silly get     'cache-control': 'max-age=60',
+18 silly get     etag: '"2ICUIXI82UCVRZY62JM3OC1EE"',
+18 silly get     age: '16',
+18 silly get     connection: 'keep-alive',
+18 silly get     'x-served-by': 'cache-nrt6130-NRT',
+18 silly get     'x-cache': 'HIT',
+18 silly get     'x-cache-hits': '1',
+18 silly get     'x-timer': 'S1438509790.698704,VS0,VE0',
+18 silly get     vary: 'Accept' } ]
+19 verbose etag https://registry.npmjs.org/json-sass from cache
+20 verbose get saving json-sass to /Users/inuscript/.npm/registry.npmjs.org/json-sass/.cache.json
+21 verbose stack Error: no repository
+21 verbose stack     at getUrlAndOpen (/usr/local/lib/node_modules/npm/lib/repo.js:27:21)
+21 verbose stack     at /usr/local/lib/node_modules/npm/lib/repo.js:21:5
+21 verbose stack     at /usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:36:12
+21 verbose stack     at addRequestedAndFinish (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:71:5)
+21 verbose stack     at returnAndAddMetadata (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:100:7)
+21 verbose stack     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:117:20)
+21 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+21 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+21 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+21 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+22 verbose cwd /Users/inuscript/github/json-sass-obj
+23 error Darwin 14.4.0
+24 error argv "node" "/usr/local/bin/npm" "repo" "json-sass"
+25 error node v0.12.2
+26 error npm  v3.2.1
+27 error no repository
+28 error If you need help, you may report this error at:
+28 error     <https://github.com/npm/npm/issues>
+29 verbose exit [ 1, true ]
