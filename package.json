@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha --require intelli-espower-loader"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": ["sass", "scss", "json", "stream"],
   "author": "inuscript",
   "license": "ISC",
