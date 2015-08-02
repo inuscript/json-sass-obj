@@ -8,7 +8,9 @@ module.exports = function(options){
     var sassString = jsToSassString(jsValue)
     sassString = options.prefix + sassString + options.suffix;
     file.contents = new Buffer(sassString)
-    file.path = replaceExt(file.path, ".scss")
+    if(typeof file.path === "string"){
+      file.path = replaceExt(file.path, ".scss")
+    }
     this.push(file)
     cb()
   })

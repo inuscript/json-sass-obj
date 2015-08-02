@@ -24,4 +24,22 @@ describe("json-sass-obj", function(){
       done()
     })
   })
+  it("should return sass file object withoud path ", function(done){
+    var fakeFile = new File({
+      contents: new Buffer(JSON.stringify({
+        "foo" : "baz",
+        "bee" : [1,2,3]
+      }))
+    })
+    var stream = jsonSassObj({
+      prefix: "$someItem: ",
+      suffix: " !default;"
+    })
+    stream.write(fakeFile)
+    stream.once('data', function(file){
+      var scss = file.contents.toString()
+      assert.equal(scss, fs.readFileSync("./test/fixture/map.scss"))
+      done()
+    })
+  })
 })
