@@ -1,6 +1,6 @@
 {
   "name": "json-sass-obj",
-  "version": "1.0.1",
+  "version": "0.0.0",
   "description": "Object mode wrapper for json-sass",
   "main": "index.js",
   "scripts": {
